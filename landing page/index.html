@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>landing page samuel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="modo-claro">
+  <!-- Toggle de modo oscuro -->
+  <input type="checkbox" id="modoOscuro" hidden>
+  <label for="modoOscuro" class="modo__toggle">🌙</label>
+
+  <header class="header">
+    <h2 class="header__logo">Jornada de Bienestar</h2>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">Inicio</a>
+      
+        <li><a href="#">Testimonios</a>
+      
+        <li><a href="#">Contacto</a>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <h1 class="hero__titulo">Unete a nuestra Jornada de Bienestar y Salud Mental Juvenil</h1>
+
+      <p class="hero__subtitulo">Un espacio gratuito para reconectar contigo mismo.</p>
+
+      <a class="boton" href="#">Inscribete ahora</a>
+      
+    </section>
+
+    <section class="testimonios" id="testimonios">
+      <h2 class="registro">Testimonios</h2>
+      <div class="testimonial__contenedor">
+        <input type="radio" name="slider" id="t1" checked hidden>
+        <input type="radio" name="slider" id="t2" hidden>
+        <input type="radio" name="slider" id="t3" hidden>
+
+        <div class="testimonial testimonial--activo" id="test1">
+          <p>“Una experiencia inolvidable.”</p>
+          <strong>– Ana –</strong>
+        </div>
+        <div class="testimonial" id="test2">
+          <p>“Sentí un ambiente seguro y lleno de empatía. Salí más fuerte de lo que entré.”</p>
+          <strong>– Luis –</strong>
+        </div>
+        <div class="testimonial" id="test3">
+          <p>“Me ayudó a abrirme emocionalmente y encontrar apoyo en personas que estaban pasando por lo mismo.”</p>
+          <strong>– Marta –</strong>
+        </div>
+
+        <div class="testimonial__navegacion">
+          <label for="t1"></label>
+          <label for="t2"></label>
+          <label for="t3"></label>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="formulario" id="contacto">
+      <h2 class="registro">Registro</h2>
+      <form>
+        <input type="text" name="nombre" placeholder="Nombre completo" required />
+        <input type="email" name="correo" placeholder="Correo electrónico" required />
+        <!-- <select name="ticket" required>
+          <option value="">Tipo de ticket</option>
+          <option value="general">General</option>
+          <option value="vip">VIP</option>
+        </select> -->
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Evento Samuel.</p>
+    <div class="footer__redes">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+  
+</body>
+</html>
